@@ -1,69 +1,20 @@
-# CPS-G — Causal Probability Substrate Gravity
-A discrete, information-thermodynamic model where **gravity, curvature, collapse, and structure formation** emerge from a single local free-energy scalar on a quantum causal graph.
+# CPSG – Causal Probability Substrate (Gravity)
 
-This repository contains:
-- Phase-1 through Phase-5 simulation notebooks
-- Reproducible pipelines (Colab + local)
-- Figures used in the manuscript
-- Environment + version locks
-- Instructions for replication and parameter sweeps
+This repository contains simulation code, notebooks, and a draft manuscript for **CPSG**, a probabilistic ontology exploring whether:
+- mass-like charge can emerge from network condensation, and  
+- negative correlation appears between local curvature proxies and mass aggregation,  
+- without invoking spacetime as a primitive.
 
----
+### Contents
+- `CPSG_Phase5a_Simple.ipynb` – minimal reproducible simulation (32×32 grid)
+- `CPSG_Phase5b_FullCPSG.ipynb` – full experiment with multiple snapshots
+- `run_all.sh` – run all experiments automatically
+- `main.tex` – draft of the scientific paper
+- `reproduction.md` – step-by-step instructions for independent verification
 
-## 🔁 Reproduce the main results
+### Quick start
+On Colab:
 
-### ✔ Quick Demo (no local install)
-Open these Colab notebooks (replace with your Colab links after upload):
-- **Phase-5a (simple CPS-G):** _add-link-here_
-- **Phase-5b (full CPS-G):** _add-link-here_
-
-### ✔ Full Local Reproduction
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r env/requirements.txt
-bash run_all.sh
-```
-This executes the Phase-5 notebooks and saves outputs under `outputs/`.
-
-> **Note:** The starter notebooks here are stubs. Replace them with your working `CPSG_Phase5a_Simple.ipynb` and `CPSG_Phase5b_FullCPSG.ipynb` from Colab.
-
----
-
-## 📁 Structure
-```
-CPSG/
-  notebooks/
-    CPSG_Phase5a_Simple.ipynb      # replace with your working notebook
-    CPSG_Phase5b_FullCPSG.ipynb     # replace with your working notebook
-  env/
-    requirements.txt
-  outputs/                          # generated figures
-  paper/
-    main.tex
-    refs.bib
-    supplementary.tex
-    figs/
-  run_all.sh
-  LICENSE
-  CITATION.cff
-  reproduction.md
-  README.md
-```
-
----
-
-## ✅ Key Findings (to be summarized after you run Phase-5 again)
-- Emergent **curvature wells** co-located with **mass clusters**
-- Negative **correlation r(K, M)** in the structured phase
-- Phase transition behavior across **T\*** and **α** sweeps
-- Ablations confirm necessity of **collapse** and **rewiring**
-- Fully **open, reproducible, falsifiable**
-
----
-
-## 📄 License
-MIT
-
-## 📚 Citation
-Please cite via the Zenodo DOI after the first GitHub release.
+pip install -r requirements.txt
+python run_all.sh
