@@ -1,0 +1,59 @@
+# ---- Python build artifacts ----
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+
+# ---- Virtual environments ----
+venv/
+env/
+.venv/
+.conda/
+.ipynb_checkpoints/
+
+# ---- Jupyter / Colab ----
+*.ipynb_checkpoints
+*.checkpoint.ipynb
+*.nbconvert
+*.log
+
+# ---- OS / Editor junk ----
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.bak
+
+# ---- Binary data files ----
+*.npz
+*.npy
+*.pkl
+*.h5
+
+# ---- Simulation outputs ----
+outputs/
+*.png
+*.pdf
+*.svg
+*.jpg
+*.zip
+
+# ---- Data caches ----
+.cache/
+__MACOSX/
+
+# ---- Spyder / VSCode ----
+.spyderproject
+.spyproject
+.vscode/
+
+# ---- JetBrains ----
+.idea/
+
+# ---- Environment files ----
+.env
+*.env
