@@ -56,4 +56,5 @@ __MACOSX/
 
 # ---- Environment files ----
 .env
-*.env
+*.envstrange-metal-app/node_modules/
+strange-metal-app/dist/
